@@ -37,6 +37,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <!-- Reference AutoCAD dependencies. Private flag False = copy local False.--> 
     <Reference Include="AcMgd">
       <HintPath>C:\Program Files\Autodesk\AutoCAD 2018\acmgd.dll</HintPath>
       <Private>False</Private>
@@ -51,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <!-- Reference main script.--> 
     <Compile Include="acad_plug.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
